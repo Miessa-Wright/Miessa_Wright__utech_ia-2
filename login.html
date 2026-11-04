@@ -1,0 +1,174 @@
+<!--  Miessa Wright id#2300715 IA#2 Web programming CIT2011 Mondays 6-8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Register for Coding Conf and create your personalized event ticket.">
+
+    <title>Coding Conf | Registration</title>
+
+    <link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        [hidden] {
+            display: none !important;
+        }
+    </style>
+
+    <script src="../js/validation.js" defer></script>
+</head>
+<body class="page page-form">
+    <header class="site-header site-header-centered">
+        <a class="brand" href="index.html" aria-label="Coding Conf home">
+            <img src="../assets/images/logo-full.svg" alt="Coding Conf">
+        </a>
+    </header>
+    <main class="form-main">
+        <section class="form-intro" aria-labelledby="form-title">
+            <p class="eyebrow">CODING CONF · OCTOBER 26, 2026</p>
+            <h1 id="form-title">
+                Your journey to <span class="gradient-text">Coding Conf</span> starts here!
+            </h1>
+            <p>
+                Complete the details below to reserve your place and generate your personalized ticket.
+            </p>
+        </section>
+        <form id="registration-form" class="registration-form" novalidate>
+            <!-- Avatar Upload Section -->
+            <div class="form-group" id="avatar-group">
+                <label for="avatar-upload">
+                    Upload Avatar <span class="required-text">(required)</span>
+                </label>
+                <div class="upload-area" id="upload-area">
+                    <input
+                        class="visually-hidden"
+                        type="file"
+                        id="avatar-upload"
+                        name="avatar"
+                        accept="image/png,image/jpeg"
+                        aria-describedby="avatar-help avatar-error"
+                    >
+                    <img
+                        class="upload-icon"
+                        id="upload-icon"
+                        src="../assets/images/icon-upload.svg"
+                        alt=""
+                    >
+                    <img
+                        class="avatar-preview"
+                        id="avatar-preview"
+                        alt="Selected avatar preview"
+                        hidden
+                    >
+                    <p id="upload-instruction">
+                        Drag and drop your photo here, or
+                        <button
+                            type="button"
+                            class="text-button"
+                            id="choose-avatar"
+                        >
+                            browse files
+                        </button>
+                    </p>
+                    <div class="upload-actions" id="upload-actions" hidden>
+                        <button
+                            type="button"
+                            class="small-button"
+                            id="change-avatar"
+                        >
+                            Change image
+                        </button>
+                        <button
+                            type="button"
+                            class="small-button"
+                            id="remove-avatar"
+                        >
+                            Remove image
+                        </button>
+
+                    </div>
+                </div>
+                <p class="help-text" id="avatar-help">
+                    <img src="../assets/images/icon-info.svg" alt="">
+                    Upload a JPG or PNG image smaller than 500KB.
+                </p>
+                <small
+                    class="field-error"
+                    id="avatar-error"
+                    aria-live="polite"
+                ></small>
+            </div>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="fullName"
+                    autocomplete="name"
+                    placeholder="e.g. Priya Wilks"
+                    aria-describedby="name-error"
+                >
+                <small
+                    class="field-error"
+                    id="name-error"
+                    aria-live="polite"
+                ></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    inputmode="email"
+                    autocomplete="email"
+                    placeholder="e.g. priya@example.com"
+                    aria-describedby="email-error"
+                >
+                <small
+                    class="field-error"
+                    id="email-error"
+                    aria-live="polite"
+                ></small>
+            </div>
+            <div class="form-group">
+                <label for="github-username">GitHub Username</label>
+                <input
+                    type="text"
+                    id="github-username"
+                    name="githubUsername"
+                    autocomplete="username"
+                    placeholder="e.g. @priyawilks"
+                    aria-describedby="github-error"
+                >
+                <small
+                    class="field-error"
+                    id="github-error"
+                    aria-live="polite"
+                ></small>
+            </div>
+            <button
+                type="submit"
+                class="button button-primary submit-button"
+            >
+                Generate My Ticket
+                <span aria-hidden="true">→</span>
+            </button>
+            <p class="form-note">
+                Your details are stored in this browser only for the ticket-generation demonstration.
+            </p>
+        </form>
+        <p class="back-link">
+            <a href="index.html">← Back to event information</a>
+        </p>
+    </main>
+    <footer class="site-footer">
+
+        <p>© 2026 Coding Conf · Papine, Kingston</p>
+
+    </footer>
+</body>
+</html>

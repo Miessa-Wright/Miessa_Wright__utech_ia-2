@@ -1,0 +1,58 @@
+<!--  Miessa Wright id#2300715 IA#2 Web programming CIT2011 Mondays 6-8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your personalized Coding Conf registration ticket.">
+    <title>Coding Conf | Your Ticket</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ticket.js" defer></script>
+</head>
+<body class="page page-ticket">
+    <header class="site-header site-header-centered">
+        <a class="brand" href="index.html" aria-label="Coding Conf home"><img src="../assets/images/logo-full.svg" alt="Coding Conf"></a>
+    </header>
+
+    <main class="ticket-main">
+        <section class="ticket-intro" aria-labelledby="ticket-heading">
+            <p class="eyebrow">REGISTRATION CONFIRMED</p>
+            <h1 id="ticket-heading">Congrats, <span class="gradient-text" id="confirmed-name">Guest</span>! Your ticket is ready.</h1>
+            <p>Your registration is confirmed for <strong>October 26, 2026</strong> in <strong>Papine, Kgn</strong>. A copy of your registration details is shown on this page.</p>
+        </section>
+
+        <section class="ticket-card" aria-label="Personalized Coding Conf ticket">
+            <div class="ticket-main-content">
+                <div class="ticket-brand-row">
+                    <img src="../assets/images/logo-full.svg" alt="Coding Conf">
+                    <span class="ticket-type">ADMIT ONE</span>
+                </div>
+                <div class="ticket-event-details">
+                    <p><span class="detail-icon" aria-hidden="true">◷</span> Date: October 26, 2026</p>
+                    <p><span class="detail-icon" aria-hidden="true">⌖</span> Location: Papine, Kgn</p>
+                </div>
+                <div class="ticket-attendee">
+                    <img class="ticket-avatar" id="ticket-avatar" src="" alt="Your uploaded profile avatar">
+                    <div class="attendee-copy">
+                        <h2 id="ticket-name">Attendee Name</h2>
+                        <a id="ticket-github" href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="../assets/images/icon-github.svg" alt=""> <span id="ticket-github-text">@username</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-stub" aria-label="Ticket reference number">
+                <span class="stub-label">TICKET</span>
+                <strong id="ticket-number">#00000</strong>
+                <span class="stub-mark" aria-hidden="true">CC</span>
+            </div>
+        </section>
+
+        <div class="ticket-actions">
+            <button type="button" class="button button-primary" id="print-ticket">Print Ticket</button>
+            <a class="button button-secondary" href="index.html">Return to Home</a>
+        </div>
+    </main>
+
+    <footer class="site-footer"><p>© 2026 Coding Conf · Papine, Kingston</p></footer>
+</body>
+</html>
